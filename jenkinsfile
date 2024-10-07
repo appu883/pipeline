@@ -3,19 +3,19 @@ agent any
 stages {
 stage ('build') {
 steps {
-sh 'sleep 5; echo "this is build stage'
+sh 'sleep 5; echo "this is build stage"'
        }
 }
 
 stage ('test') {
 steps {
-sh 'sleep 5; echo "this is test stage"
+sh 'sleep 5; echo "this is test stage"'
  }
   }
 
 stage ('deploy') {
 steps {
-sh 'sleep 5; echo "this is deploy stage"
+sh 'sleep 5; echo "this is deploy stage"'
   }
    }
 	}
