@@ -11,16 +11,16 @@ sh 'sleep5 ; echo "this is build stage"'
 			}
 stage ('test'){
 steps{
-catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+
 sh 'sleep 5; echo "this is test stage"'
 	}
 		}
-			}
+			
 stage ('deploy'){
 steps{
-catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+
 sh 'sleep 5; echo "this is deploy stage"'
-	}
+	
 		}
 			}
 				}
